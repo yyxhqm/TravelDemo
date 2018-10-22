@@ -23,7 +23,7 @@ export default {
     HomeHeader,
     HomeSwiper,
     HomeIcons,
-    HomeiconList,
+    HomeRecommend,
     HomeWeekend
   },
   data () {
