@@ -18,10 +18,11 @@
 
 <!--整个模板的逻辑-->
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
@@ -51,11 +52,12 @@ export default {
       border-radius: .1rem
       color: #ccc
     .header-right
-      width: 1.24rem
+      min-width: 1.04rem
+      padding: 0 .1rem
       float: right
       text-align: center
       color: #fff
-      .arrow-iocn{
-        margin-left: -0.4rem
-      }
+      .arrow-icon
+        margin-left: -.04rem
+        font-size: .24rem
 </style>
